@@ -2,7 +2,7 @@
  * In these tasks you will need to manipulate the array below in order to answer the questions. Some answers will require you to store the result in a variable, others will need you to inspect the whole array.
  */
 
-// stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds", "Doncaster", "Peterborough"];
+stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds", "Doncaster", "Peterborough"];
 
 
 //   Q1.
@@ -86,12 +86,16 @@
  * Is Durham one of the stops?
  */
 
-stoppingAtDurham = null;
+// let stoppingAtDurham = stations.indexOf("Durham") !== -1;
+//  console.log(stoppingAtDurham);
 
-// console.log(stoppingAtDurham);
 
-
-/**
- * Q9.
- * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
- */
+// **
+//  * Q9.
+//  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
+  let stoppingAtDurham = stations.indexOf("Durham") !== -1;
+if (stoppingAtDurham) {
+  console.log("Yay Durham!");
+} else {
+  console.log("Aww...");
+}
